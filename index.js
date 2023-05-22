@@ -1,4 +1,3 @@
-import './style.css';
 import { Tasks } from './modules/task_class.js';
 import { addTaskSubmit, removeTaskClick } from './modules/add_remove_task.js';
 import sync from './assets/sync-outline.svg';
