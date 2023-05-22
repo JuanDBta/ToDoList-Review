@@ -1,6 +1,3 @@
-import trash from '../assets/trash-outline.svg';
-import menu from '../assets/ellipsis-vertical-outline.svg';
-
 export default class Tasks {
   constructor() {
     if (!localStorage.getItem('tasks')) {
@@ -70,13 +67,13 @@ export default class Tasks {
       const removeButton = document.createElement('img');
       removeButton.classList.add('button_remove');
       removeButton.dataset.id = task.id;
-      removeButton.src = trash;
+      removeButton.src = './assets/trash-outline.svg';
       removeButton.alt = '';
       taskItem.appendChild(removeButton);
 
       const menuButton = document.createElement('img');
       menuButton.classList.add('menu_button');
-      menuButton.src = menu;
+      menuButton.src = './assets/ellipsis-vertical-outline.svg';
       menuButton.alt = '';
       taskItem.appendChild(menuButton);
 
